@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Adding a Student</title>
+        <style type ="text/css">
+                #div1 {background-color:lightsalmon;width:33cm;height:40px;}
+                #p1 {font-size:30px;font-family:arial;text-align:center;font-style:italic;}
+                body{background-color:lightgoldenrodyellow;}
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="div1">
+                <p id="p1">Mepco Schlenk Engineering College</p>
+            </div><br><br><br>
+    <center>
+        <h2>Adding New Student</h2>
+        <form action="addstudentservlet" >
+            <fieldset>
+                <legend>Student Details:</legend>
+                Student Name        : <input type="text" name="name"><br><br>
+                Gender<br>
+                Male<input type="radio" name="gender" value="Male">
+                Female<input type="radio" name="gender" value="Female"><br><br>
+                DOB                 : <input type="date" name="dob"><br><br>
+                Admission Number    : <input type="text" name="adno"><br><br>
+                Registration Number : <input type="text" name="regno"><br><br>
+                Year                  : <select name="year">
+                                        <option value="I year">1<sup>st</sup>Year</option>
+                                        <option value="II year">2<sup>nd</sup>Year</option>
+                                        <option value="III Year">3<sup>rd</sup>Year</option>
+                                        <option value="IV Year">4<sup>th</sup>Year</option>
+                                      </select><br><br>
+                Department          : <select name="dept">
+                                        <option value="CSE">Computer Science</option>
+                                        <option value="IT">Information Technology</option>
+                                        <option value="MECH">Mechanical</option>
+                                        <option value="EEE">Electricals</option>
+                                        <option value="ECE">Electronicals</option>
+                                        <option value="BIO">Biotechnology</option>
+                                        <option value="CIVIL">Civil</option>
+                                      </select>
+                    <br><br>
+                    Section:<br>
+                A Section<input type="radio" name="section" value="A">
+                B Section<input type="radio" name="section" value="B">
+                A Section<input type="radio" name="section" value="C">
+                B Section<input type="radio" name="section" value="D"><br><br>
+                Batch               : <input type="text" name="batch"><br><br>
+                   Routine:<br>
+                Day Scholar<input type="radio" name="routine" value="Dayscholar">
+                Hosteller<input type="radio" name="routine" value="Hosteller"><br><br>
+            </fieldset><br><br><br>
+            <fieldset>
+                <legend>Credentials Details:
+                </legend>
+                User Id             : <input type="text" name="uid">
+                Password            : <input type="text" name="password">
+            </fieldset>
+            <input type="submit" value="Add">
+            </center>
+             </form>
+    </body>
+</html>

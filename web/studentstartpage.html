@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login Page</title>
+        <style type ="text/css">
+                #div1 {background-color: pink;width:33cm;height:40px;}
+                #p1 {font-size:30px;font-family:arial;text-align:center;font-style:italic;}
+                body{background-color:lightsteelblue;}
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+            <div id="div1">
+                <p id="p1">Mepco Schlenk Engineering College</p>
+            </div><br><br><br>
+            <div id="loginbox"> <center>             
+            <h2>Student Login</h2>     
+            <form action="StudentCredentialCheckServlet" >
+            <fieldset>
+                <legend>Credentials:</legend>
+                <div id="textbox">User Id: <input type="text" name="uid"></div><br><br>
+                <div id="textbox">Password: <input type="password" name="password"></div><br><br>
+                Student Profile<input type="radio" name="choice" value="profile">
+                Academics<input type="radio" name="choice" value="academics">
+                Attendance<input type="radio" name="choice" value="attendance"><br><br>
+                <input type="submit" value="Login">
+            </fieldset>
+            </form></center>
+    </div>
+               </body>
+</html>

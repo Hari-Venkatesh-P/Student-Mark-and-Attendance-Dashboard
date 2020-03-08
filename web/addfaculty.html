@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Adding a Faculty</title>
+        <style type ="text/css">
+                #div1 {background-color:greenyellow;width:33cm;height:40px;}
+                #p1 {font-size:30px;font-family:arial;text-align:center;font-style:italic;}
+                body{background-color:lightgreen;}
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="div1">
+                <p id="p1">Mepco Schlenk Engineering College</p>
+            </div><br><br><br>
+    <center>
+        <h2>Adding New Faculty</h2>
+        <form action="addfacultyservlet" >
+            <fieldset>
+                <legend>Faculty Details:</legend>
+                Faculty Name        : <input type="text" name="name"><br><br>
+                Faculty ID          : <input type="text" name="facid"><br><br>
+                Department          : <select name="dept">
+                                        <option value="CSE">Computer Science</option>
+                                        <option value="IT">Information Technology</option>
+                                        <option value="MECH">Mechanical</option>
+                                        <option value="EEE">Electricals</option>
+                                        <option value="ECE">Electronicals</option>
+                                        <option value="BIO">Biotechnology</option>
+                                        <option value="CIVIL">Civil</option>
+                                      </select>
+                    <br><br>
+            </fieldset><br><br><br>
+            <fieldset>
+                <legend>Credentials Details:
+                </legend>
+                User Id             : <input type="text" name="uid">
+                Password            : <input type="text" name="password">
+            </fieldset>
+            <input type="submit" value="Add">
+            </center>
+             </form>
+    </body>
+</html>

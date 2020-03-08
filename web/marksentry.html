@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Adding a Student</title>
+        <style type ="text/css">
+                #div1 {background-color:lightsalmon;width:33cm;height:40px;}
+                #p1 {font-size:30px;font-family:arial;text-align:center;font-style:italic;}
+                body{background-color:lightgoldenrodyellow;}
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="div1">
+                <p id="p1">Mepco Schlenk Engineering College</p>
+        </div><br><br><br>
+    <center>
+        <h2>Marks Entry</h2>
+        <form action="addmarksservlet" >
+            <fieldset>
+                <legend>Student Marks Details:</legend>
+                Admission No        : <input type="text" name="adno"><br><br>
+                Student Name        : <input type="text" name="name"><br><br>
+                Department          : <select name="dept">
+                                        <option value="CSE">Computer Science</option>
+                                        <option value="IT">Information Technology</option>
+                                        <option value="MECH">Mechanical</option>
+                                        <option value="EEE">Electricals</option>
+                                        <option value="ECE">Electronicals</option>
+                                        <option value="BIO">Biotechnology</option>
+                                        <option value="CIVIL">Civil</option>
+                </select><br><br>
+                Semester          : <select name="sem">
+                                        <option value="sem1">Semester 1</option>
+                                        <option value="sem2">Semester 2</option>
+                                        <option value="sem3">Semester 3</option>
+                                        <option value="sem4">Semester 4</option>
+                                        <option value="sem5">Semester 5 </option>
+                                        <option value="sem6">Semester 6</option>
+                                        <option value="sem7">Semester 7</option>
+                                        <option value="sem8">Semester 8</option>
+                </select><br><br>
+                <br>
+                Internal 1<input type="radio" name="exam" value="Internal 1">
+                Internal 2<input type="radio" name="exam" value="Internal 2">
+                Internal 3<input type="radio" name="exam" value="Internal 3">
+                End Semester Exam<input type="radio" name="exam" value="Semester"><br><br>
+                Course 1    : <input type="text" name="c1"><br><br>
+                Course 2    : <input type="text" name="c2"><br><br>
+                Course 3    : <input type="text" name="c3"><br><br>
+                Course 4    : <input type="text" name="c4"><br><br>
+                Course 5    : <input type="text" name="c5"><br><br>
+                Course 6    : <input type="text" name="c6"><br><br>
+                    <br><br>
+                <input type="submit" value="Add Marks">
+            </fieldset><br><br><br>
+            </center>
+             </form>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <style type ="text/css">
+                #div1 {background-color: pink;width:33cm;height:40px;}
+                #p1 {font-size:30px;font-family:arial;text-align:center;font-style:italic;}
+                body{background-color:lightsteelblue;}
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+            <div id="div1">
+                <p id="p1">Mepco Schlenk Engineering College</p>
+            </div><br><br><br>
+               <center>
+            <h2>Welcome To Office Server</h2>     
+            <form action="CredentialCheckServlet" >
+            <fieldset>
+                <legend>Credentials:</legend>
+                User Id: <input type="text" name="uid"><br><br>
+                Password: <input type="password" name="password"><br><br>
+                Faculty<input type="radio" name="user" value="faculty">
+                Admin<input type="radio" name="user" value="admin"><br><br>
+                <input type="submit" value="Click Me">
+            </fieldset>
+            </center>
+             </form>
+               </body>
+</html>
